@@ -32,7 +32,8 @@ vuln_scanner/
 └── README.md            # Project description
 ```
 
-![Screenshot](screenshot.png) 
+![Screenshot](![Screenshot 2025-06-16 123753](https://github.com/user-attachments/assets/a40efdc3-1d9b-483f-978e-523d93acba12)
+.png) 
 
 ## Report
 
