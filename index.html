@@ -1,0 +1,29 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Vulnerability Scanner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        input[type="text"] { width: 300px; padding: 5px; }
+        input[type="submit"] { padding: 5px 10px; }
+    </style>
+</head>
+<body>
+    <h1>Web Vulnerability Scanner</h1>
+    <form method="POST">
+        <label>Enter URL to scan:</label><br><br>
+        <input type="text" name="url" required />
+        <input type="submit" value="Scan" />
+    </form>
+
+    {% if result %}
+        <h3>Scan Results for: {{ result.url }}</h3>
+        <ul>
+            <li>XSS Vulnerability: <strong>{{ '✅ Found' if result.xss else '❌ Not Found' }}</strong></li>
+            <li>SQL Injection: <strong>{{ '✅ Found' if result.sqli else '❌ Not Found' }}</strong></li>
+        </ul>
+    {% endif %}
+</body>
+</html>

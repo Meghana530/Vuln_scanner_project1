@@ -1,0 +1,6 @@
+XSS | http://testphp.vulnweb.com/ | Payload: <script>alert(1)</script> | Severity: High
+XSS | http://testphp.vulnweb.com/ | Payload: <script>alert(1)</script> | Severity: High
+XSS | http://testphp.vulnweb.com/ | Payload: <script>alert(1)</script> | Severity: High
+XSS | http://testphp.vulnweb.com/ | Payload: <script>alert(1)</script> | Severity: High
+XSS | http://testphp.vulnweb.com/ | Payload: <script>alert(1)</script> | Severity: High
+XSS | http://testphp.vulnweb.com/ | Payload: <script>alert(1)</script> | Severity: High
